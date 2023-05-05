@@ -23,9 +23,8 @@ function AdminLists() {
         .then((res) => setAllAdmins(res.data))
         .catch((err) => setError(err));
     };
-    return () => {
-      getData();
-    };
+
+    getData();
   }, []);
 
   let addUser = () => {

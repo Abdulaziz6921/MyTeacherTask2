@@ -24,9 +24,7 @@ function ClientLists() {
         .then((res) => setAllClients(res.data))
         .catch((err) => setError(err));
     };
-    return () => {
-      getData();
-    };
+    getData();
   }, []);
 
   let addClient = () => {
